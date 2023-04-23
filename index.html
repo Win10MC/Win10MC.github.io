@@ -127,26 +127,3 @@
 			document.body.appendChild( a );
 		}
 		
-		if( document.querySelector( "#pr" ) ){
-			document.querySelector( "#pr" ).onclick = function onClick( ev ) {
-		  		this.remove( );
-		  		var date = new Date( );
-				date.setTime( date.getTime( ) + ( parseInt( this.dataset.length ) * 60 * 60 * 1000 ) );
-		  		document.cookie = this.dataset.cookie + '=yes; expires=' + date.toGMTString( );
-			}
-		}
-	</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97551325-26"></script>
-<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', 'UA-97551325-26');
-</script>
-
-</body>
-</html>
-
-
-
