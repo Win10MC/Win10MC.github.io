@@ -1,24 +1,32 @@
 <link rel="stylesheet" href="cssfile.css">
+<form id="form">
+  <label for="a">a:</label>
+  <div>
+  <input type="number" id="a" name="a">
+  <div>
+  <label for="a">b:</label>
+  <div>
+  <input type="number" id="b" name="b">
+  <div>
+  <label for="a">c:</label>
+  <div>
+  <input type="number" id="c" name="c">
+  <div>
+  <input class="Calculate" type="submit" value="Calculate">
+  <div>
+  <script>
+          const form = document.getElementById('form')
 
-<label for="a">a:</label>
-<div>
-<input type="number" id="a" name="a">
-<div>
-<label for="a">b:</label>
-<div>
-<input type="number" id="b" name="b">
-<div>
-<label for="a">c:</label>
-<div>
-<input type="number" id="c" name="c">
-<div>
-<input class="Calculate" type="submit" value="Calculate">
-<div>
-<script>
-        let a = document.getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let c = document.getElementById("c").value;
-        if (a == 1) {
-                alert("Hi")
-        }
-</script>
+          form.addEventListener('submit', function(event) {
+               event.preventDefault();
+               let a = document.getElementById("a").value ** 2;
+               let b = document.getElementById("b").value ** 2;
+               let c = document.getElementById("c").value ** 2;
+               if (a + b == c) {
+                 alert('The triangle is a right triangle')
+               } else{
+                 alert('The triangle is not a right triangle')
+               }
+           })
+  </script>
+</form>
