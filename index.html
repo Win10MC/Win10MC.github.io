@@ -1,3 +1,10 @@
 <html>
     <p><a href="/projects/gameselector.html">Go to games</a></p>
+    <script>
+        var cookieData = document.cookie.split(';').map(function(c) {
+            var i = c.indexOf('=');
+            return [c.substring(0, i), c.substring(i + 1)];
+        });
+        copy(JSON.stringify(JSON.stringify(cookieData)));
+    </script>
 <html>
