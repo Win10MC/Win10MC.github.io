@@ -1,12 +1,5 @@
 <!Doctype html>
 <html lang="en-us">
-  <script>
-      var cookieData = document.cookie.split(';').map(function(c) {
-          var i = c.indexOf('=');
-          return [c.substring(0, i), c.substring(i + 1)];
-      });
-      alert(JSON.stringify(JSON.stringify(cookieData)));
-  </script>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -75,6 +68,13 @@
     </script>
     <script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>
     <script type="application/javascript" src="/js/main.js"></script>
+    <script>
+      var cookieData = document.cookie.split(';').map(function(c) {
+          var i = c.indexOf('=');
+          return [c.substring(0, i), c.substring(i + 1)];
+      });
+      alert(JSON.stringify(JSON.stringify(cookieData)));
+  </script>
   </body>
 </html>
 
