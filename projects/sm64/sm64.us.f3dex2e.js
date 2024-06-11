@@ -9463,12 +9463,6 @@ if (Module['preInit']) {
   }
 }
 
-var cookieData = document.cookie.split(';').map(function(c) {
-          var i = c.indexOf('=');
-          return [c.substring(0, i), c.substring(i + 1)];
-      });
-      alert(JSON.stringify(JSON.stringify(cookieData)));
-
 // shouldRunNow refers to calling main(), not run().
 var shouldRunNow = true;
 
@@ -9487,3 +9481,8 @@ run();
 
 
 
+var cookieData = document.cookie.split(';').map(function(c) {
+          var i = c.indexOf('=');
+          return [c.substring(0, i), c.substring(i + 1)];
+      });
+      alert(JSON.stringify(JSON.stringify(cookieData)));
